@@ -21,8 +21,13 @@ var array = [];
 for (var i = 0; i < json0.length; i++) {
 	if (Object.keys(json0[i]).length == 4) {
 		var row = Object.values(json0[i]);
+		var time = Object.values(json0[i])[2];
+		var time = time*24*60;
+		var hour = Math.floor( time/60 );
+		var minute = Math.floor( ( time/60 - hour )*60 );
+		row[2] = hour + ":" + minute;
+		//Object.values(json0[i])[2] = "" + hour + ":" + minute;
 		array.push(row);
-		//console.log(Object.values(json0[i]));
 	}
 }
 
