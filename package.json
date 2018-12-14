@@ -1,0 +1,15 @@
+{
+  "name": "joescript",
+  "version": "1.0.0",
+  "description": "Parse and format disgusting Excel file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "table": "^5.1.1",
+    "xlsx": "^0.14.1"
+  }
+}
